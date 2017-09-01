@@ -13,15 +13,27 @@ layout: base
 <section class="homepage-section recent-interviews">
   <div class="container">
     <ul class="interview-previews">
-      {% for interview in interviews %}
-        <li class="interview-preview">
-          <a href="{{ interview.link }}">
-            <h3 class="interview-preview-title">{{ interview.title }}</h3>
-            <p class="interview-preview-description">{{ interview.description }}</p>
-            <p class="interview-preview-meta">Recorded on {{ interview.date_recorded }}, {{ interview.duration }} min.</p>
-          </a>
-        </li>
-      {% endfor %}
+      <li class="interview-preview">
+        <a href="{{ interview.link }}">
+          <h3 class="interview-preview-title">Judy Hughes</h3>
+          <p class="interview-preview-description">Judy Hughes talks about her experience growing up in Northbrook.</p>
+          <p class="interview-meta">Recorded on September 1, 2017, 45 min.</p>
+        </a>
+      </li>
+      <li class="interview-preview">
+        <a href="{{ interview.link }}">
+          <h3 class="interview-preview-title">Judy Hughes</h3>
+          <p class="interview-preview-description">Judy Hughes talks about her experience growing up in Northbrook.</p>
+          <p class="interview-meta">Recorded on September 1, 2017, 45 min.</p>
+        </a>
+      </li>
+      <li class="interview-preview">
+        <a href="{{ interview.link }}">
+          <h3 class="interview-preview-title">Judy Hughes</h3>
+          <p class="interview-preview-description">Judy Hughes talks about her experience growing up in Northbrook.</p>
+          <p class="interview-meta">Recorded on September 1, 2017, 45 min.</p>
+        </a>
+      </li>
     </ul>
     <a href="#" class="button solid">Hear more stories</a>
   </div>
