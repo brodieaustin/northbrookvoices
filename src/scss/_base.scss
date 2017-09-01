@@ -1,0 +1,35 @@
+/* base */
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font: 400 17px/1.5 $secondary-font-family;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+  line-height: 1.2;
+  font-weight: 500;
+  font-family: $primary-font-family;
+}
+
+a{
+  color: $primary-color;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity .2s ease;
+
+  &:hover{
+    opacity: .7;
+  }
+
+}
+
+header, main, footer{
+  position: relative;
+}

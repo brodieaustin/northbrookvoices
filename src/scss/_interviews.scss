@@ -1,0 +1,64 @@
+.interview-previews{
+  @include unstyled-list();
+  @include flex-list();
+  text-align: left;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    margin-left: -2rem;
+  }
+}
+
+.interview-preview{
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $secondary-color;
+
+  @media screen and (#{$bp-larger-than-phablet}){
+    width: 60%;
+  }
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    width: calc(33.333% - 2rem);
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+
+  > a{
+    display: block;
+    padding: 2rem 2rem 1rem;
+    color: $font-color;
+  }
+
+  .interview-meta{
+    margin-top: 3rem;
+  }
+}
+
+.interview-preview-title{
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.interview-preview-description{
+  margin-top: .25rem;
+}
+
+.interview-audio{
+  position: relative;
+  z-index: 500;
+}
+
+.interview-meta{
+  font-family: $primary-font-family;
+  color: $dark-grey;
+  font-size: .825rem;
+  letter-spacing: .5px;
+}
+
+.interview-transcript{
+  &.truncate{
+    max-height: 20rem;
+  }
+}

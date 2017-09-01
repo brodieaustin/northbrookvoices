@@ -1,0 +1,3 @@
+title: "Northbrook Voices"
+baseurl: ""
+exclude: ['node_modules', 'src', 'gulpfile.js', 'package.json']

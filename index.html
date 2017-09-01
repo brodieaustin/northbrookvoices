@@ -1,0 +1,36 @@
+---
+title: "Homepage"
+layout: base
+---
+
+<section class="homepage-section hero tinted">
+  <div class="container">
+    <p class="hero-text">Recording and preserving the stories of life in Northbrook.</p>
+    <p class="hero-subtext">A project of the Northbrook History Museum and the Northbrook Public Library</p>
+  </div>
+</section>
+
+<section class="homepage-section recent-interviews">
+  <div class="container">
+    <ul class="interview-previews">
+      {% for interview in interviews %}
+        <li class="interview-preview">
+          <a href="{{ interview.link }}">
+            <h3 class="interview-preview-title">{{ interview.title }}</h3>
+            <p class="interview-preview-description">{{ interview.description }}</p>
+            <p class="interview-preview-meta">Recorded on {{ interview.date_recorded }}, {{ interview.duration }} min.</p>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <a href="#" class="button solid">Hear more stories</a>
+  </div>
+</section>
+
+<section class="homepage-section share-cta">
+  <div class="container">
+    <h2>How it works</h2>
+    <p>You can tell the story of your experiences of living in Northbrook and what Northbrook has meant in your life. When you participate, you will receive a CD recording of your 30-minute interview. Think of this as a friendly conversation between you and future generations who will be enriched by your story.</p>
+    <a href="#" class="button border">Share your story</a>
+  </div>
+</section>

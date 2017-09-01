@@ -1,0 +1,16 @@
+.tags{
+  @include unstyled-list();
+}
+
+.tag{
+  display: inline-block;
+  background-color: $secondary-color;
+
+  a{
+    display: block;
+    padding: .5rem 1.5rem;
+    font-family: $primary-font-family;
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+}
